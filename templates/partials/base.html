@@ -1,0 +1,41 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {% include 'partials/head.html' %}
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        {% include 'partials/spinner.html' %}
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        {% include 'partials/topbar.html' %}
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        {% include 'partials/navbar.html' %}
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        {% include 'partials/search.html' %}
+        <!-- Modal Search End -->
+
+        {% block content %}
+        {% endblock content %}
+        
+
+
+        <!-- Footer Start -->
+        {% include 'partials/footer.html' %}
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        <!-- JavaScript Libraries -->
+        {% include 'partials/scripts.html' %}
+    </body>
+</html>
